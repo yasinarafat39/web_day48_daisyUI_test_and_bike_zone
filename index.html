@@ -29,12 +29,12 @@
         theme: {
           extend: {
             colors: {
-              primary: "#E76F51",
-              secondary: "rgba(231, 111, 81, 10%)",
+              project_primary: "#E76F51",
+              project_secondary: "rgba(231, 111, 81, 10%)",
             },
-            fontFamily : {
-                poppins : '"Poppins", sans-serif',
-                manrope : '"Manrope", sans-serif'
+            fontFamily: {
+              poppins: '"Poppins", sans-serif',
+              manrope: '"Manrope", sans-serif',
             },
             spacing: {
               max_web_width: "1440px",
@@ -45,9 +45,56 @@
       };
     </script>
   </head>
-  <body class="border-2 border-green-500 max-w-max_web_width mx-auto font-poppins">
-    <header class="max-w-max_content_width mx-auto border-2 border-pink-500"> 
-
+  <body
+    class="border-2 border-green-500 max-w-max_web_width mx-auto font-poppins"
+  >
+    <header class="max-w-max_content_width mx-auto border-2 border-pink-500">
+      <div class="navbar">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-medium"
+            >
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-4xl font-bold">Bike Dekho</a>
+        </div>
+        <div class="navbar-center hidden lg:flex font-medium">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:ml-12">
+          <a
+            class="btn h-auto bg-project_primary text-white text-xl font-bold px-12 py-4"
+            >Login</a
+          >
+        </div>
+      </div>
     </header>
   </body>
 </html>
