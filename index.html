@@ -49,26 +49,13 @@
           },
         },
       };
-    </script>
-
-    <!-- style -->
-    <style>
-      @layer components {
-        .carousel_slider_btn {
-          @apply btn bg-transparent text-5xl w-4 font-light hover:text-project_primary hover:bg-transparent duration-200 btn-circle;
-        }
-
-        .carousel_slider_icon {
-          @apply hover:bg-project_secondary transition duration-700 py-[268px] px-7;
-        }
-      }
-    </style>
+    </script> 
   </head>
   <body
     class="border-2 border-green-500 max-w-max_web_width mx-auto font-poppins"
   >
     <header
-      class="max-w-max_content_width mx-auto border-2 border-pink-500 mb-32"
+      class="max-w-max_content_width mx-auto mb-32"
     >
       <!-- navbar section -->
       <nav class="navbar md:my-12">
@@ -246,9 +233,28 @@
 
     <!-- main -->
     <main>
+ 
+      <!-- featured Bikes section -->
+      <section class="max-w-max_content_width mx-auto">
+          
+        <!-- section header -->
+        <div class="text-center mb-[50px]">
+          <h2 class="text-[48px] font-semibold">Fetured Bikes In This Year</h2>
+          <p class="text-sm font-semibold text-project_primary">Best bike collection</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-[136px]">
+          <img src="./images/others/feature-bike.png" alt="feature-bike">
+          <img src="./images/others/feature-bike.png" alt="feature-bike" class="grayscale">
+          <img src="./images/others/feature-bike.png" alt="feature-bike">
+        </div>
+     </section>
+ 
+
+
       <!-- Frequently Asked Questions section -->
       <section
-        class="max-w-max_content_width mx-auto border-2 border-pink-500 mb-32"
+        class="max-w-max_content_width mx-auto mb-32"
       >
         <h2 class="text-center text-5xl font-semibold leading-[50px] mb-12">
           Frequently Asked <span class="text-project_primary">Questions</span>
@@ -301,6 +307,7 @@
           </div>
         </div>
       </section>
+ 
     </main>
 
     <!-- footer -->
